@@ -8,6 +8,7 @@ do
     Console.WriteLine("Ingrese 3 numeros diferentes...");
     var a = ConsoleExtension.GetInt("Ingrese primer numero  : ");
     var b = ConsoleExtension.GetInt("Ingrese segundo numero : ");
+
     if (a == b)
     {
         Console.WriteLine("Deben ser diferentes, vuelva a empezar...");
@@ -53,5 +54,13 @@ do
             Console.WriteLine($"El mayor {c}, el medio es {b}, el menor es {a}");
         }
     }
-} while (true);
-    
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]i, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("Game Over. ");
+
+
