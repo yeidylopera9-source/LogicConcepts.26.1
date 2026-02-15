@@ -6,7 +6,7 @@ var options = new List<string> { "s", "n" };
 do
 {
     var name = ConsoleExtension.GetString("Ingrese nombre...................: ");
-    var workHours = ConsoleExtension.GetFloat("Ingrese numero de hoas trabajadas: ");
+    var workHours = ConsoleExtension.GetFloat("Ingrese numero de horas trabajadas: ");
     var hourValue = ConsoleExtension.GetDecimal("Ingrese valor hora...............: ");
     var salaryMimimun = ConsoleExtension.GetDecimal("Ingrese salio minimo mensual.: ");
 
