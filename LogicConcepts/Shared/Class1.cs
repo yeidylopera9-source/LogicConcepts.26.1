@@ -43,7 +43,7 @@ public static class ConsoleExtension
         var text = Console.ReadLine();
         return text;
     }
-
+  
 
     public static string? GetValidOptions(string message, List<string> options)
     {
