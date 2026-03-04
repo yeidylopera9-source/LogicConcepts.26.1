@@ -29,6 +29,13 @@
   <Folder Name="/10/">
     <Project Path="Store/Store.csproj" Id="584ab9e8-547c-484b-af8e-1bb01b2cf302" />
   </Folder>
+  <Folder Name="/11/">
+    <Project Path="TransportCompany/TransportCompany.csproj" Id="af32b27f-fcc2-474d-8957-d040a2e19bdf" />
+  </Folder>
+  <Folder Name="/28/">
+    <Project Path="Strongest.Beam/Strongest.Beam.csproj" Id="dc85313b-e303-4c00-a20e-57debdaaf4e7" />
+  </Folder>
+  <Folder Name="/37/" />
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" Id="75ed849b-f8ed-4641-b9b9-b23206920e19" />
   </Folder>

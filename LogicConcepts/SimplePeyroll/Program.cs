@@ -8,7 +8,7 @@ do
     var name = ConsoleExtension.GetString("Ingrese nombre...................: ");
     var workHours = ConsoleExtension.GetFloat("Ingrese numero de horas trabajadas: ");
     var hourValue = ConsoleExtension.GetDecimal("Ingrese valor hora...............: ");
-    var salaryMimimun = ConsoleExtension.GetDecimal("Ingrese salio minimo mensual.: ");
+    var salaryMimimun = ConsoleExtension.GetDecimal("Ingrese salario minimo mensual.: ");
 
     var salary = (decimal) workHours * hourValue;
     if (salary < salaryMimimun)
