@@ -15,7 +15,7 @@ do
 
     if (string.IsNullOrWhiteSpace(entry)) return;
 
-    // 1. Limpiar la entrada y convertirla en una lista de coordenadas
+    //  Limpiar la entrada y convertirla en una lista de coordenadas
     var horses = entry.Split(',')
                           .Select(c => c.Trim().ToUpper())
                           .ToList();
