@@ -70,7 +70,7 @@ do
         lastElement = piece;
     }
 
-    // 4. Mostrar resultados finales
+    //  Mostrar resultados finales
     if (badBuilt)
     {
         Console.WriteLine("La viga está mal construida!");
