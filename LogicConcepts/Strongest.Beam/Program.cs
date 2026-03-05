@@ -15,8 +15,8 @@ do
         };
 
     ConsoleExtension.GetString("Ingrese la viga.....: ");
-    string beam = Console.ReadLine() ??"";
-  
+    string beam = Console.ReadLine() ?? "";
+
     if (string.IsNullOrEmpty(beam)) return;
 
     //  Validación inicial de la base
@@ -25,12 +25,13 @@ do
     {
         Console.WriteLine("La viga está mal construida!");
         return;
-    }
+
+}
 
     int baseCapacity = resistance[baseChar]; 
     double totalWeight = 0;
-    int pesoCrossbarNext = 1; 
-    int sumSequentialCurrent = 0;        
+    int pesoCrossbarNext = 0; 
+    int sumSequentialCurrent = 1;        
     bool badBuilt = false; 
     char lastElement = baseChar;
 
@@ -54,8 +55,7 @@ do
                 break;
             }
 
-            // Regla: Pesa el doble de la secuencia de largueros anterior
-            totalWeight += (sumSequentialCurrent * 2);
+            totalWeight += 1;
 
             // Reiniciar contadores para la nueva secuencia de largueros
             sumSequentialCurrent = 0;
@@ -77,7 +77,7 @@ do
     }
     else
     {
-        if (totalWeight <= baseCapacity)
+        if (totalWeight <= baseCapacity || baseChar == '#')
         {
             Console.WriteLine("La viga soporta el peso!");
         }
